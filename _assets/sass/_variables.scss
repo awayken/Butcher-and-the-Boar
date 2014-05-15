@@ -2,7 +2,14 @@
     Variables
 **/
 
-// Greens
-$greens-heading: #000;
-$greens-food: #000;
-$greens-describe: #000;
+$menu-sections: greens, snacks;
+
+$colors-map: (
+    "greens-heading": black,
+    "greens-food": maroon,
+    "greens-describe": black,
+
+    "snacks-heading": orange,
+    "snacks-food": orange,
+    "snacks-describe": maroon
+)

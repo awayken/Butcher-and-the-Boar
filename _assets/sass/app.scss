@@ -1,14 +1,16 @@
 
 @import '_variables';
 
-.greens {
-    h1 {
-        color: $greens-heading;
-    }
-    .food {
-        color: $greens-food;
-    }
-    .about {
-        color: $greens-describe;
+@each $section in $menu-sections {
+    .#{$section} {
+        h1 {
+            color: map_get( $colors-map, "#{$section}-heading" );
+        }
+        .food {
+            color: map_get( $colors-map, "#{$section}-food" );
+        }
+        .about {
+            color: map_get( $colors-map, "#{$section}-describe" );
+        }
     }
 }
