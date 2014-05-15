@@ -7,9 +7,24 @@ $menu-sections: greens, snacks;
 $colors-map: (
     "greens-heading": black,
     "greens-food": maroon,
-    "greens-describe": black,
+    "greens-price": black,
+    "greens-note": black,
 
-    "snacks-heading": orange,
-    "snacks-food": orange,
-    "snacks-describe": maroon
-)
+    "snacks-heading": darkorange,
+    "snacks-food": darkorange,
+    "snacks-price": darkorange,
+    "snacks-note": maroon
+);
+
+@import url("//brick.a.ssl.fastly.net/Bitter:400/Clear+Sans:400/Raleway:100");
+$fonts-map: (
+    "greens-heading": "Bitter",
+    "greens-food": "Clear Sans",
+    "greens-price": "Clear Sans",
+    "greens-note": "Clear Sans",
+
+    "snacks-heading": "Raleway",
+    "snacks-food": "Raleway",
+    "snacks-price": "Raleway",
+    "snacks-note": "Raleway"
+);
