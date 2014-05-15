@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/awayken/Butcher-and-the-Boar",
   "devDependencies": {
+    "express": "^4.2.0",
     "gulp": "^3.6.2",
     "gulp-ruby-sass": "^0.5.0"
   }
