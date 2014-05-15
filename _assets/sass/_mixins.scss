@@ -1,0 +1,15 @@
+// Mixins
+
+@mixin columns( $column-count ) {
+	columns: $column-count;
+	-o-columns: $column-count;
+	-moz-columns: $column-count;
+	-webkit-columns: $column-count;
+}
+
+@mixin column-break() {
+	break-after: always;
+	-o-break-after: always;
+	-moz-break-after: always;
+	-webkit-break-after: always;
+}
