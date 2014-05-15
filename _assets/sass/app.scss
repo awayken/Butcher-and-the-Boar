@@ -1,16 +1,52 @@
 
 @import '_variables';
+@import '_mixins';
+
+h1, dl, dt, dd {
+    margin: 0;
+}
+
+body {
+    background: darken( rgb( 201, 177, 151 ), 15% );
+    color: black;
+}
+
+.menu {
+    @include columns( 5 );
+    padding: 4em;
+}
 
 @each $section in $menu-sections {
     .#{$section} {
+        padding: 0.15em 0.25em;
+        text-align: justify;
+
         h1 {
             color: map_get( $colors-map, "#{$section}-heading" );
+            font-family: map_get( $fonts-map, "#{$section}-heading" );
         }
         .food {
             color: map_get( $colors-map, "#{$section}-food" );
+            font-family: map_get( $fonts-map, "#{$section}-food" );
         }
-        .about {
-            color: map_get( $colors-map, "#{$section}-describe" );
+        .price {
+            color: map_get( $colors-map, "#{$section}-price" );
+            float: right;
+            font-family: map_get( $fonts-map, "#{$section}-price" );
+            margin-top: -1em;
+            position: relative;
+        }
+        .note {
+            color: map_get( $colors-map, "#{$section}-note" );
+            font-family: map_get( $fonts-map, "#{$section}-note" );
         }
     }
+}
+
+.greens, .snacks h1, .snacks .food {
+    text-transform: uppercase;
+}
+
+.snacks {
+    @include column-break();
 }
