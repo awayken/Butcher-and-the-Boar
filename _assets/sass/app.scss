@@ -1,0 +1,14 @@
+
+@import '_variables';
+
+.greens {
+    h1 {
+        color: $greens-heading;
+    }
+    .food {
+        color: $greens-food;
+    }
+    .about {
+        color: $greens-describe;
+    }
+}
