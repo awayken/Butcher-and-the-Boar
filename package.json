@@ -1,0 +1,26 @@
+{
+  "name": "Butcher-and-the-Boar",
+  "version": "0.0.1",
+  "description": "An HTML version of the menu at Butcher & the Boar.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/awayken/Butcher-and-the-Boar.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Miles Rausch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/awayken/Butcher-and-the-Boar/issues"
+  },
+  "homepage": "https://github.com/awayken/Butcher-and-the-Boar",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-ruby-sass": "^0.5.0"
+  }
+}
