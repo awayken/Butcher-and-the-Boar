@@ -1,4 +1,6 @@
 
+@import url("//brick.a.ssl.fastly.net/Bitter:400/Clear+Sans:400/Raleway:100,400/Open+Sans:300/Lato:100,400");
+
 @import '_variables';
 @import '_mixins';
 
@@ -7,13 +9,52 @@ h1, dl, dt, dd {
 }
 
 body {
-    background: darken( rgb( 201, 177, 151 ), 15% );
+    background: url('../images/ricepaper.png');
     color: black;
+    padding: 0.5em;
+}
+
+header {
+    font-family: Raleway;
+    font-weight: 100;
+    letter-spacing: -0.04em;
+    word-spacing: 0.15em;
+    text-align: center;
+
+    h1 {
+        font-size: 1em;
+        font-weight: 100;
+    }
+
+    img, .street {
+        display: block;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+
+    a {
+        &:link, &:hover, &:active, &:visited, &:focus {
+            color: black;
+            font-weight: 400;
+            text-decoration: none;
+        }
+        span {
+            color: orange;
+            font-size: 1.75em;
+            font-weight: 100;
+            vertical-align: sub;
+        }
+    }
+
+    .address {
+        margin: 1em 0 2em;
+    }
 }
 
 .menu {
     @include columns( 5 );
-    padding: 4em;
 }
 
 @each $section in $menu-sections {
@@ -43,8 +84,12 @@ body {
     }
 }
 
-.greens, .snacks h1, .snacks .food {
+header, .greens, .snacks h1, .snacks .food {
     text-transform: uppercase;
+}
+
+.snacks h1 {
+    font-weight: 100;
 }
 
 .snacks {
