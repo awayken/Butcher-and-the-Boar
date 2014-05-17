@@ -1,5 +1,6 @@
 
 @import url("//brick.a.ssl.fastly.net/Bitter:400/Clear+Sans:400/Raleway:100,400/Lato:200");
+@import url("http://fonts.googleapis.com/css?family=Spirax");
 
 @import '_variables';
 @import '_mixins';
@@ -207,7 +208,7 @@ footer {
         padding-bottom: 0.25em;
         span {
             color: $color-maroon;
-            font-size: 0.5em;
+            font-size: 0.4em;
         }
     }
     .price {
