@@ -211,8 +211,34 @@ footer {
             font-size: 0.4em;
         }
     }
+    .food ~ .food {
+        margin-top: 1em;
+    }
     .price {
         font-size: 0.5em;
         margin-top: 0;
     }
+}
+
+.prime {
+    background: $color-dark;
+    padding: 0.5em 0;
+    h1 {
+        border-bottom: 1px solid $color-light;
+        letter-spacing: 1em;
+        margin-bottom: 0.3em;
+        padding-bottom: 0.25em;
+        padding-left: 0.35em;
+        text-align: center;
+    }
+    dl {
+        padding: 0 0.5em;
+    }
+    .food span {
+        font-size: 0.65em;
+    }
+}
+
+.sausage {
+    text-align: center;
 }
