@@ -1,98 +1,96 @@
-/**
-    Variables
-**/
+// Variables
 
 $menu-sections: greens, snacks, waters, butcher, meats, prime, sausage, sides;
 
 $color-dark: black;
-$color-light: rgb( 238, 233, 211 );
+$color-light: rgb(238, 233, 211);
 $color-orange: darkorange;
 $color-maroon: maroon;
 
 $colors-map: (
-    "greens-heading": $color-dark,
-    "greens-food": $color-maroon,
-    "greens-price": $color-dark,
-    "greens-note": $color-dark,
+    'greens-heading': $color-dark,
+    'greens-food': $color-maroon,
+    'greens-price': $color-dark,
+    'greens-note': $color-dark,
 
-    "snacks-heading": $color-orange,
-    "snacks-food": $color-orange,
-    "snacks-price": $color-orange,
-    "snacks-note": $color-maroon,
+    'snacks-heading': $color-orange,
+    'snacks-food': $color-orange,
+    'snacks-price': $color-orange,
+    'snacks-note': $color-maroon,
 
-    "waters-heading": $color-dark,
-    "waters-food": $color-maroon,
-    "waters-price": $color-dark,
-    "waters-note": $color-dark,
+    'waters-heading': $color-dark,
+    'waters-food': $color-maroon,
+    'waters-price': $color-dark,
+    'waters-note': $color-dark,
 
-    "butcher-heading": $color-light,
-    "butcher-food": $color-dark,
-    "butcher-price": $color-dark,
-    "butcher-note": $color-dark,
+    'butcher-heading': $color-light,
+    'butcher-food': $color-dark,
+    'butcher-price': $color-dark,
+    'butcher-note': $color-dark,
 
-    "meats-heading": $color-orange,
-    "meats-food": $color-dark,
-    "meats-price": $color-dark,
-    "meats-note": $color-dark,
+    'meats-heading': $color-orange,
+    'meats-food': $color-dark,
+    'meats-price': $color-dark,
+    'meats-note': $color-dark,
 
-    "prime-heading": $color-light,
-    "prime-food": $color-light,
-    "prime-price": $color-light,
-    "prime-note": $color-light,
+    'prime-heading': $color-light,
+    'prime-food': $color-light,
+    'prime-price': $color-light,
+    'prime-note': $color-light,
 
-    "sausage-heading": $color-dark,
-    "sausage-food": lighten( $color-maroon, 5% ),
-    "sausage-price": $color-dark,
-    "sausage-note": $color-dark,
+    'sausage-heading': $color-dark,
+    'sausage-food': lighten($color-maroon, 5%),
+    'sausage-price': $color-dark,
+    'sausage-note': $color-dark,
 
-    "sides-heading": $color-dark,
-    "sides-food": $color-orange,
-    "sides-price": $color-orange,
-    "sides-note": $color-dark
+    'sides-heading': $color-dark,
+    'sides-food': $color-orange,
+    'sides-price': $color-orange,
+    'sides-note': $color-dark
 );
 
-$font-serif: "Bitter";
-$font-sans: "Clear Sans";
-$font-thin: "Lato";
+$font-serif: 'Bitter';
+$font-sans: 'Clear Sans';
+$font-thin: 'Lato';
 
 $fonts-map: (
-    "greens-heading": $font-serif,
-    "greens-food": $font-sans,
-    "greens-price": $font-sans,
-    "greens-note": $font-sans,
+    'greens-heading': $font-serif,
+    'greens-food': $font-sans,
+    'greens-price': $font-sans,
+    'greens-note': $font-sans,
 
-    "snacks-heading": $font-thin,
-    "snacks-food": $font-thin,
-    "snacks-price": $font-thin,
-    "snacks-note": $font-thin,
+    'snacks-heading': $font-thin,
+    'snacks-food': $font-thin,
+    'snacks-price': $font-thin,
+    'snacks-note': $font-thin,
 
-    "waters-heading": $font-thin,
-    "waters-food": $font-sans,
-    "waters-price": $font-sans,
-    "waters-note": $font-sans,
+    'waters-heading': $font-thin,
+    'waters-food': $font-sans,
+    'waters-price': $font-sans,
+    'waters-note': $font-sans,
 
-    "butcher-heading": $font-serif,
-    "butcher-food": $font-sans,
-    "butcher-price": $font-sans,
-    "butcher-note": $font-sans,
+    'butcher-heading': $font-serif,
+    'butcher-food': $font-sans,
+    'butcher-price': $font-sans,
+    'butcher-note': $font-sans,
 
-    "meats-heading": $font-thin,
-    "meats-food": Spirax,
-    "meats-price": $font-sans,
-    "meats-note": $font-sans,
+    'meats-heading': $font-thin,
+    'meats-food': Spirax,
+    'meats-price': $font-sans,
+    'meats-note': $font-sans,
 
-    "prime-heading": $font-sans,
-    "prime-food": $font-sans,
-    "prime-price": $font-sans,
-    "prime-note": $font-sans,
+    'prime-heading': $font-sans,
+    'prime-food': $font-sans,
+    'prime-price': $font-sans,
+    'prime-note': $font-sans,
 
-    "sausage-heading": $font-serif,
-    "sausage-food": $font-sans,
-    "sausage-price": $font-serif,
-    "sausage-note": $font-sans,
+    'sausage-heading': $font-serif,
+    'sausage-food': $font-sans,
+    'sausage-price': $font-serif,
+    'sausage-note': $font-sans,
 
-    "sides-heading": $font-thin,
-    "sides-food": $font-thin,
-    "sides-price": $font-thin,
-    "sides-note": $font-thin
+    'sides-heading': $font-thin,
+    'sides-food': $font-thin,
+    'sides-price': $font-thin,
+    'sides-note': $font-thin
 );
