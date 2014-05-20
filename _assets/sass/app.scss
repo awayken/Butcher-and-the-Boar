@@ -23,6 +23,7 @@ header {
     letter-spacing: -0.04em;
     word-spacing: 0.15em;
     text-align: center;
+    text-transform: uppercase;
 
     h1 {
         font-size: 1em;
@@ -120,14 +121,19 @@ footer {
 .greens {
     border: 3px black double;
     padding: 0 0.5em 0.5em;
+
     h1 {
         border-bottom: 1px solid black;
+        letter-spacing: 15px;
     }
 }
 
 .snacks, .sides {
     &, h1, .waters h1 {
         font-weight: 200;
+    }
+    h1 {
+        letter-spacing: 24px;
     }
     .food {
         letter-spacing: -0.04em;
@@ -144,6 +150,10 @@ footer {
 
 .waters {
     font-size: 1.2em;
+
+    h1 {
+        letter-spacing: 16px;
+    }
 
     .food {
         font-size: 1.1em;
@@ -205,7 +215,9 @@ footer {
 .meats {
     h1 {
         border-bottom: 1px solid $color-dark;
+        letter-spacing: 4px;
         padding-bottom: 0.25em;
+
         span {
             color: $color-maroon;
             font-size: 0.4em;
@@ -240,5 +252,39 @@ footer {
 }
 
 .sausage {
+    border: 3px black double;
+    padding: 0.25em 0.5em;
     text-align: center;
+
+    .price {
+        float: none;
+        font-size: 0.5em;
+        margin-top: 0;
+    }
+    .food {
+        font-size: 0.8em;
+        padding-right: 0;
+        text-align: center;
+
+        ~ .food {
+            margin-top: 1em;
+        }
+    }
+    .special {
+        margin-top: 1em;
+        h2 {
+            border: 1px solid black;
+            font-family: $font-serif;
+            font-size: 1em;
+            padding: 0.25em 0.35em;
+            text-decoration: underline;
+
+            .price {
+                font-size: 0.75em;
+            }
+        }
+        .note {
+            font-size: 0.6em;
+        }
+    }
 }
