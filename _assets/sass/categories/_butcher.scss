@@ -1,0 +1,58 @@
+.butcher {
+    h1,
+    .special {
+        background: $color-maroon;
+        margin-bottom: 0;
+        padding: .35em;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    dl {
+        border-left: .05em solid $color-maroon;
+        border-right: .05em solid $color-maroon;
+        padding: .25em .5em;
+    }
+
+    .food {
+        padding-right: 0;
+        text-transform: none;
+    }
+
+    .price {
+        font-size: .5em;
+        margin-top: 0;
+    }
+
+    .note {
+        padding-right: .75em;
+    }
+
+    .special {
+        h2,
+        .price,
+        .note {
+            color: $color-light;
+        }
+
+        h2 {
+            font-family: Raleway;
+            font-size: 1.1em;
+            font-weight: 100;
+        }
+
+        .price {
+            float: none;
+            font-size: .8em;
+            margin-top: 0;
+        }
+
+        .note {
+            font-size: .6em;
+            text-transform: none;
+        }
+    }
+}

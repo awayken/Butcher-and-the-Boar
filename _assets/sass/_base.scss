@@ -1,0 +1,63 @@
+body {
+    background: url('../images/ricepaper.png');
+    color: $color-dark;
+    font-family: arial, sans-serif;
+    font-size: 1.3em;
+    padding: .5em;
+}
+
+header {
+    font-family: Raleway;
+    font-weight: 100;
+    letter-spacing: -.04em;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: .15em;
+
+    h1 {
+        font-size: 1em;
+        font-weight: 100;
+    }
+
+    img,
+    .street {
+        display: block;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+
+    a {
+        &:link,
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus {
+            color: $color-dark;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        span {
+            color: $color-orange;
+            font-size: 1.75em;
+            font-weight: 100;
+            vertical-align: sub;
+        }
+    }
+
+    .address {
+        margin: 1em 0;
+    }
+}
+
+.menu {
+    @include columns(5);
+    margin: 1em 0;
+}
+
+footer {
+    font-size: .9em;
+    font-variant: small-caps;
+}

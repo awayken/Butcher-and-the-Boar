@@ -1,0 +1,18 @@
+.waters {
+    font-size: 1.2em;
+
+    h1 {
+        letter-spacing: .4em;
+    }
+
+    .food {
+        font-size: 1.1em;
+        text-align: justify;
+
+        & ~ .food {
+            border-top: .05em solid black;
+            margin-top: .5em;
+            padding-top: .5em;
+        }
+    }
+}

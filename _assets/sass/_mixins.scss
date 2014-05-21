@@ -2,7 +2,7 @@
 
 @mixin clearfix() {
     &:before,
-	&:after {
+    &:after {
         content: ' ';
         display: table;
     }

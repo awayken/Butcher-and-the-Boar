@@ -1,0 +1,21 @@
+.meats {
+    h1 {
+        border-bottom: .05em solid $color-dark;
+        letter-spacing: .2em;
+        padding-bottom: .25em;
+
+        span {
+            color: $color-maroon;
+            font-size: .4em;
+        }
+    }
+
+    .food ~ .food {
+        margin-top: 1em;
+    }
+
+    .price {
+        font-size: .5em;
+        margin-top: 0;
+    }
+}
