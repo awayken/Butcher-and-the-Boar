@@ -1,0 +1,56 @@
+.category {
+	box-sizing: border-box;
+	line-height: 1;
+	margin-bottom: 1em;
+	padding: .15em .25em;
+	text-align: justify;
+	text-transform: uppercase;
+
+	h1 {
+		margin-bottom: .25em;
+	}
+
+	.food {
+		padding-right: .65em;
+		text-align: left;
+
+		~ .food {
+			margin-top: .5em;
+		}
+	}
+
+	.price {
+		float: right;
+		font-size: .75em;
+		margin-top: -1em;
+		position: relative;
+	}
+
+	.note {
+		font-size: .5em;
+	}
+}
+
+@each $section in $menu-sections {
+	.#{$section} {
+		h1 {
+			color: map-get($colors-map, '#{$section}-heading');
+			font-family: map-get($fonts-map, '#{$section}-heading');
+		}
+
+		.food {
+			color: map-get($colors-map, '#{$section}-food');
+			font-family: map-get($fonts-map, '#{$section}-food');
+		}
+
+		.price {
+			color: map-get($colors-map, '#{$section}-price');
+			font-family: map-get($fonts-map, '#{$section}-price');
+		}
+
+		.note {
+			color: map-get($colors-map, '#{$section}-note');
+			font-family: map-get($fonts-map, '#{$section}-note');
+		}
+	}
+}
