@@ -22,3 +22,25 @@
         width: 100% / $column-count;
     }
 }
+
+%thin-orange {
+    font-weight: 200;
+
+    h1 {
+        font-weight: 200;
+        letter-spacing: .77em;
+    }
+
+    .food {
+        letter-spacing: -.04em;
+    }
+
+    .price {
+        font-size: 1em;
+    }
+
+    .note {
+        font-size: .75em;
+        text-transform: none;
+    }
+}
